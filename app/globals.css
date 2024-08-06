@@ -8,3 +8,101 @@
     box-sizing: border-box;
     font-family: 'Gilroy';
 }
+#fristPageBtn-text{
+    transition: .3s;
+}
+#fristPageBtn-text:hover{
+    background-color: #FFFF;
+    color: black;
+}
+#fristPageBtn-text:hover ~ #fristPageicon::after{
+    width: 100%;
+    height: 100%;
+}
+#fristPageBtn-text:hover ~ #fristPageicon{
+    /* border: .3vmin solid black ; */
+}
+#fristPageBtn-text:hover ~ #fristPageicon>.balck{
+    color: black ;
+}
+#fristPageicon::after{
+    content: '';
+    width: 0%;
+    height: 0%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #ffff;
+    transition: .3s;
+    border-radius: 50%;
+    z-index: -1;
+}
+#fristPageicon:hover:after{
+    width: 100%;
+    height: 100%;
+}
+#fristPageicon:hover{
+    /* border: .3vmin solid black ; */
+}
+#fristPageicon:hover>.balck{
+    color: black;
+    border: .3vmin solid black ;
+}
+
+
+
+/* =================== underline text animition ================ */
+.underlineText:hover>.line{
+    animation: move .6s ease 2 alternate-reverse ;
+}
+@keyframes move {
+    0%{
+        width: 0;
+    }
+    
+}
+
+
+
+#approach-section{
+    background: linear-gradient(to bottom, #ceeb67, #000000);
+}
+
+.cmn-btn::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(0, 100%);
+    background: #fff;
+    z-index: -1;
+    border-radius:  50%;
+    transition: .3s;
+}
+.cmn-btn::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(0, -100%);
+    background: #fff;
+    z-index: -1;
+    border-radius:  50%;
+    transition: .3s;
+}
+.cmn-btn:hover{
+    color: #000000;
+}
+.cmn-btn:hover::after{
+    transform: translate(0, 0);
+    border-radius:  0%;
+}
+.cmn-btn:hover::before{
+    transform: translate(0, 0);
+    border-radius:  0%;
+}
