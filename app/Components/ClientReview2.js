@@ -5,7 +5,7 @@ import ClinetInfo from './CommoneCmpns/ClinetInfo'
 
 const ClientReview2 = ({ ulText, name }) => {
     return (
-        <section className="w-full py-[2vmin] h-screen text-white ">
+        <section id='client-review2' className="w-full py-[2vmin] bg-[#08080a] h-screen text-white ">
             <ClinetInfo ulText="Oxizen" name="rihad" />
             <ClinetInfo ulText="haidra" name="abdullah" />
             <ClinetInfo ulText="portfulio" name="alex zendra" />

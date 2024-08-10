@@ -10,7 +10,7 @@ const Card = (props) => {
         <p className='text-[2vmi] uppercase'>{props.headText}</p>
       </div>
       <div className={`${props.h} rounded-3xl overflow-hidden`}>
-        <img className='w-full h-full object-cover' src={props.url} alt="" />
+        <img className={ `transition-all w-full h-full object-cover ${props.isScale  ? "scale-[1.06]" : "scale-1"}`} src={props.url} alt="" />
       </div>
       <div className="btn flex gap-[1vmin] py-[1vmin]">
         {props.textarr.map(e =>{

@@ -8,24 +8,30 @@
     box-sizing: border-box;
     font-family: 'Gilroy';
 }
-#fristPageBtn-text{
+
+#fristPageBtn-text {
     transition: .3s;
 }
-#fristPageBtn-text:hover{
+
+#fristPageBtn-text:hover {
     background-color: #FFFF;
     color: black;
 }
-#fristPageBtn-text:hover ~ #fristPageicon::after{
+
+#fristPageBtn-text:hover~#fristPageicon::after {
     width: 100%;
     height: 100%;
 }
-#fristPageBtn-text:hover ~ #fristPageicon{
+
+#fristPageBtn-text:hover~#fristPageicon {
     /* border: .3vmin solid black ; */
 }
-#fristPageBtn-text:hover ~ #fristPageicon>.balck{
-    color: black ;
+
+#fristPageBtn-text:hover~#fristPageicon>.balck {
+    color: black;
 }
-#fristPageicon::after{
+
+#fristPageicon::after {
     content: '';
     width: 0%;
     height: 0%;
@@ -38,38 +44,42 @@
     border-radius: 50%;
     z-index: -1;
 }
-#fristPageicon:hover:after{
+
+#fristPageicon:hover:after {
     width: 100%;
     height: 100%;
 }
-#fristPageicon:hover{
+
+#fristPageicon:hover {
     /* border: .3vmin solid black ; */
 }
-#fristPageicon:hover>.balck{
+
+#fristPageicon:hover>.balck {
     color: black;
-    border: .3vmin solid black ;
+    border: .3vmin solid black;
 }
 
 
 
 /* =================== underline text animition ================ */
-.underlineText:hover>.line{
-    animation: move .6s ease 2 alternate-reverse ;
+.underlineText:hover>.line {
+    animation: move .6s ease 2 alternate-reverse;
 }
+
 @keyframes move {
-    0%{
+    0% {
         width: 0;
     }
-    
+
 }
 
 
 
-#approach-section{
+#approach-section {
     background: linear-gradient(to bottom, #ceeb67, #000000);
 }
 
-.cmn-btn::after{
+.cmn-btn::after {
     content: "";
     width: 100%;
     height: 100%;
@@ -79,10 +89,11 @@
     transform: translate(0, 100%);
     background: #fff;
     z-index: -1;
-    border-radius:  50%;
+    border-radius: 50%;
     transition: .3s;
 }
-.cmn-btn::before{
+
+.cmn-btn::before {
     content: "";
     width: 100%;
     height: 100%;
@@ -92,17 +103,152 @@
     transform: translate(0, -100%);
     background: #fff;
     z-index: -1;
-    border-radius:  50%;
+    border-radius: 50%;
     transition: .3s;
 }
-.cmn-btn:hover{
+
+.cmn-btn:hover {
     color: #000000;
 }
-.cmn-btn:hover::after{
+
+.cmn-btn:hover::after {
     transform: translate(0, 0);
-    border-radius:  0%;
+    border-radius: 0%;
 }
-.cmn-btn:hover::before{
+
+.cmn-btn:hover::before {
     transform: translate(0, 0);
-    border-radius:  0%;
+    border-radius: 0%;
+}
+
+
+
+/* ===============================  */
+/* responsive  */
+/* ==================================== */
+@media (max-width: 756px){
+    #section1{
+        height: 90vh;
+    }
+    #approach-section{
+        flex-direction: column;
+        gap: 8vmin;
+    }
+    #approach-img{
+        width: 90%;
+    }
+    .pair-card-con{
+        flex-direction: column;
+        gap: 4vmin;
+    }
+    .card-pair{
+        width: 98%;
+
+    }
+    .pair-card-text{
+        backdrop-filter: blur(10px);
+    }
+    .client-p{
+        font-size: 8vmin;
+    }
+    .client-img{
+        width: 27vmin;
+    }
+    #footer{
+        flex-direction: column;
+        gap: 5vmin;
+        /* background-color: red; */
+    }
+    #footer-bottom{
+        width: 90vmin;
+        
+    }
+}
+@media (max-width: 1145px) {
+    #section1{
+        height: auto;
+        gap: 15vmin;
+    }
+    #nav-con{
+        display: none;
+
+    }
+    #page1-big-text {
+        font-size: 13vmin;
+        line-height: 12vw;
+    }
+    .move-text{
+        font-size: 40vmin;
+    }
+
+    #about-con {
+        gap: 7vmin;
+    }
+
+    #about-text-top {
+        display: block;
+        font-size: 7vmin;
+        text-align: center;
+    }
+
+    #about-info {
+        justify-content: space-between;
+        gap: 4vmin;
+
+    }
+
+    #about-info #para {
+        width: 70vmin;
+        font-size: 4vmin;
+    }
+
+    #about-info #contuct>h1 {
+        font-size: 6vmin;
+    }
+
+    #about-info #contuct>span {
+        font-size: 5vmin;
+    }
+
+    #client-info-con {
+        /* flex-direction: column;
+        
+        gap: 3vmin; */
+
+    }
+
+    #client-parsonal {
+
+        width: 70vmin;
+    }
+
+    #client-parsonal p {
+        font-size: 5vmin;
+    }
+    #client-review,#client-review2 {
+        height: auto;
+    }
+    #client-project, #read-text{
+        font-size: 9vmin;
+
+    }
+    #client-project{
+        width: 300px;
+
+    }
+    #client-name{
+        font-size: 7.4vmin;
+        width: 220px;
+    }
+    #card-of-cardSection{
+        width: 70vmin;
+    }
+    .cardSection{
+        height: auto;
+    }
+    .or-text{
+        font-size: 7.7vmin;
+        line-height: 1;
+    }
+
 }
