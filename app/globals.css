@@ -127,6 +127,7 @@
 /* responsive  */
 /* ==================================== */
 @media (max-width: 756px){
+    
     #section1{
         height: 90vh;
     }
@@ -169,10 +170,37 @@
         height: auto;
         gap: 15vmin;
     }
-    #nav-con{
-        display: none;
+    #nav-main-con{
+        position: relative;
 
     }
+    #nav-con{
+        z-index: 99;
+        position: absolute;
+        /* right: -100%; */
+        top: 0;
+        /* display: none; */
+        flex-direction: column;
+        width: 40vmin;
+        height: 100vh;
+        background: #ceeb67;
+        border-bottom-right-radius: 50px;
+        border-bottom-left-radius: 50px;
+        align-items: flex-start;
+        padding: 10vmin 4vmin;
+        justify-content: start;
+    }
+    #menu-btn{
+        display: block;
+    }
+    #contunct{
+        margin-left: 0;
+    }
+    .item{
+        font-size: 6vmin;
+        color: black;
+    }
+
     #page1-big-text {
         font-size: 13vmin;
         line-height: 12vw;
